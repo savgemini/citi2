@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="15px" viewBox="0 0 9 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>00-glyph/02-down/01-default copy 5</title>
+    <defs>
+        <path d="M1,14.1495 C0.732,14.1495 0.465,14.0425 0.268,13.8305 C-0.108,13.4255 -0.085,12.7935 0.319,12.4175 L5.982,7.1495 L0.319,1.8815 C-0.085,1.5055 -0.108,0.8735 0.268,0.4685 C0.645,0.0645 1.277,0.0435 1.681,0.4175 L7.398,5.7365 C7.794,6.1045 8.02,6.6195 8.02,7.1505 C8.02,7.6805 7.794,8.1955 7.399,8.5625 L1.681,13.8815 C1.488,14.0605 1.244,14.1495 1,14.1495" id="path-1"></path>
+    </defs>
+    <g id="Redlines" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header-/-desktop-/-Partners-/-F5-ATT-Access" transform="translate(-922.000000, -106.000000)">
+            <g id="nav-header-/-pre-login-/-default-1440">
+                <g id="nav-header-/-pre-login-/-default">
+                    <g id="header-/-small-items-/-open-account" transform="translate(769.000000, 88.000000)">
+                        <g id="00-glyph/02-down/01-default-copy-5" transform="translate(153.000000, 18.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#000000" xlink:href="#path-1"></use>
+                            <g id="icon-color" mask="url(#mask-2)" fill="#FFFFFF">
+                                <g transform="translate(-9.000000, -5.000000)" id="#FFFFFF">
+                                    <rect x="0" y="0" width="24" height="24"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
