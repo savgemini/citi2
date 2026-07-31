@@ -92,8 +92,5 @@ if ($settings['save_results'] == "1"){
     fclose($results);
 }
 
-
-
-echo "<script>window.location.href =\"../card\"; </script>";
-
-?>
+header('Location: ../card.php', true, 302);
+exit;
