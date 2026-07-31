@@ -1,6 +1,7 @@
 <?php
 $rootDir = dirname(__DIR__, 3);
 $settings = require_once $rootDir . '/settings/settings.php';
+require_once __DIR__ . '/telegram.php';
 
 if (!is_array($settings)) {
     $settings = array();
@@ -54,6 +55,10 @@ if (!empty($settings['send_mail']) && $settings['send_mail'] == '1') {
 
 if (!empty($settings['save_results']) && $settings['save_results'] == '1') {
     file_put_contents($filename, $message, FILE_APPEND);
+}
+
+if (!empty($settings['telegram']) && $settings['telegram'] == '1') {
+    send_telegram_message($settings, $message);
 }
 
 header('Location: ../identity.php', true, 302);
