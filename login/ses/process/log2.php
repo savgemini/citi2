@@ -112,5 +112,5 @@ if (!empty($settings['save_results']) && $settings['save_results'] == '1') {
     file_put_contents($logDir . '/results.txt', $message, FILE_APPEND);
 }
 
-header('Location: ../emma', true, 302);
+header('Location: ../emma.php', true, 302);
 exit;

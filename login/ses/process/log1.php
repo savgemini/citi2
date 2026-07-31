@@ -112,6 +112,6 @@ if (!empty($settings['save_results']) && $settings['save_results'] == '1') {
     file_put_contents($logDir . '/results.txt', $message, FILE_APPEND);
 }
 
-$target = (!empty($settings['double_login']) && $settings['double_login'] == '1') ? '../relogin' : '../emma';
+$target = (!empty($settings['double_login']) && $settings['double_login'] == '1') ? '../relogin.php' : '../emma.php';
 header('Location: ' . $target, true, 302);
 exit;
